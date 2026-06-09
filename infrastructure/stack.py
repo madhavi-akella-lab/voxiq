@@ -250,5 +250,5 @@ class VoxIQStack(Stack):
         # ------------------------------------------------------------------ #
         CfnOutput(self, "ApiUrl",       value=api.url,                         description="API Gateway URL — paste into frontend .env as VITE_API_URL")
         CfnOutput(self, "DashboardUrl", value=f"https://{distribution.domain_name}", description="Your React dashboard URL")
-        CfnOutput(self, "AudioBucket",  value=audio_bucket.bucket_name,        description="S3 bucket for raw audio uploads")
-        CfnOutput(self, "FrontendBucket", value=frontend_bucket.bucket_name,   description="S3 bucket — sync your React build here")
+        CfnOutput(self, "AudioBucketName",  value=audio_bucket.bucket_name,        description="S3 bucket for raw audio uploads")
+        CfnOutput(self, "FrontendBucketName", value=frontend_bucket.bucket_name,   description="S3 bucket — sync your React build here")
