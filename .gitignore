@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+cdk.out/
+
+# Node
+node_modules/
+dist/
+.env
+.env.local
+
+# AWS
+*.pem
+cdk.context.json
