@@ -165,7 +165,8 @@ class VoxIQStack(Stack):
             code=lambda_.Code.from_asset("../backend/lambdas/s3_trigger"),
             role=lambda_role,
             environment=shared_env,
-            timeout=Duration.seconds(30),
+            timeout=Duration.seconds(300),
+            memory_size=256,
         )
         audio_bucket.add_event_notification(
             s3.EventType.OBJECT_CREATED,
